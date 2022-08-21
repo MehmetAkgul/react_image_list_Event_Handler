@@ -15,7 +15,7 @@ class SearchInput extends React.Component {
                         <div className="ui massive icon input">
                             <input type="text"
                                    placeholder='search...'
-                                   onChange={(event) => this.setState({entry: event.target.value.toUpperCase})}
+                                   onChange={(event) => this.setState({entry: event.target.value.toUpperCase()})}
                                    value={this.state.entry}
                             />
                             <i className="search icon"></i>
