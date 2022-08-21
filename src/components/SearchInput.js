@@ -2,9 +2,6 @@ import React from "react";
 
 class SearchInput extends React.Component {
 
-    onInputChange(event) {
-        console.log(event.target.value)
-    }
 
     render() {
         return (
@@ -14,7 +11,7 @@ class SearchInput extends React.Component {
                         <div className="ui massive icon input">
                             <input type="text"
                                    placeholder='search...'
-                                   onChange={this.onInputChange} //
+                                   onChange={(event)=>console.log(event.target.value)} //
                             />
                             <i className="search icon"></i>
                         </div>
