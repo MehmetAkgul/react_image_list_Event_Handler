@@ -5,13 +5,12 @@ class SearchInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {entry: ''};
-
-
     }
 
-    onFormSubmit=(event)=> {// arrow function this değerini otommatik bind eder
+    onFormSubmit = (event) => {// arrow function this değerini otommatik bind eder
         event.preventDefault();
-        console.log(this.state.entry)
+        //console.log(this.state.entry)
+        this.props.onSearchSubmit(this.state.entry);
     }
 
     render() {
