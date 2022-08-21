@@ -6,11 +6,10 @@ class SearchInput extends React.Component {
         super(props);
         this.state = {entry: ''};
 
-        //bind the onFormSubmit function
-        this.onFormSubmit = this.onFormSubmit.bind(this)
+
     }
 
-    onFormSubmit(event) {
+    onFormSubmit=(event)=> {// arrow function this değerini otommatik bind eder
         event.preventDefault();
         console.log(this.state.entry)
     }
